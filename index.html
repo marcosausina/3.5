@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 3.5</title>
+    <link rel="stylesheet" href="style.css">
+<script>
+    function mifuncion(){
+        alert ("benvingut a 2025");
+    }
+    function mifuncion1(){
+        alert ("se ha ejecutado onkeydown");
+    }
+    function mifuncion2(){
+        alert ("se ha ejecutado onkeypress");
+    }
+    function mifuncion3(){
+        alert ("se ha ejecutado onkeyup");
+    }
+    function funcion_color(){
+        var parrafo = document.getElementById(parraf1) ;
+        parrafo.style.color='red' ;
+    }
+</script>
+</head>
+<body onload="mifuncion()">
+    
+    <h1>Navegadores web</h1>
+    <hr>
+    <p id="definicion">Un <span id="navegador">navegador</span> web (en inglés, web browser) es un software, aplicación o programa que permite el acceso a la Web, interpretando la información de distintos tipos de archivos y sitios web para que estos puedan ser vistos.</p>
+    <hr>
+    <p style="color: green;">La funcionalidad básica de un navegador web es permitir la visualización de documentos de texto, posiblemente con recursos multimedia incrustados</p>
+    <h3>Ejemplos de navegadores web</h3>
+    <p class="navegador">Safari:Safari es un navegador web de código cerrado desarrollado por Apple Inc. Está disponible para macOS, IPadOS e IOS.</p>
+    <p class="navegador">Mozilla Firefox es un navegador web libre y de código abierto desarrollado para Linux, Adroid, iOS, macOS y Microsoft Windows coordinado por la Corporación Mozilla y la Fundación Mozilla</p>
+    <p class="navegador">Google Chrome es un navegador web de código cerrado desarrollado por Google, aunque derivado de proyectos de código abierto</p>
+    onkeydown <input type="text" onkeydown="mifuncion1()">
+    onkeypress <input type="text" onkeypress="mifuncion2()">
+    onkeyup <input type="text" onkeyup="mifuncion3()">
+    <p onclick="this.style.color='red'">Este párrafo tiene establecido el atributo onclick</p>
+    <p onclick="funcion_color()" id="parraf1">Este párrafo tiene establecido el atributo Onclick</p>
+
+
+</body>
+</html>
